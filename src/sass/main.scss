@@ -1,29 +1,29 @@
-@import "./common/fonts";
-@import "./common/common";
+@import './common/fonts';
+@import './common/common';
 
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/mixins";
-@import "./utils/placeholders";
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
 
-@import "./common/section";
-@import "./common/container";
+@import './common/section';
+@import './common/container';
+@import './common/body';
 
-@import "./components/body";
-@import "./components/logo";
-@import "./components/form";
-@import "./components/burger-menu";
-@import "./components/buttons";
-@import "./components/call-us";
-@import "./components/menu";
-@import "./components/form-contacts";
-@import "./components/social";
+@import './components/logo';
+@import './components/form';
+@import './components/burger-menu';
+@import './components/buttons';
+@import './components/call-us';
+@import './components/menu';
+@import './components/form-contacts';
+@import './components/social';
 
-@import "./layout/header";
-@import "./layout/question";
-@import "./layout/lawyers-in-business";
-@import "./layout/works";
-@import "./layout/advantages";
-@import "./layout/contact-us";
-@import "./layout/reviews";
-@import "./layout/footer";
+@import './layout/header';
+@import './layout/question';
+@import './layout/lawyers-in-business';
+@import './layout/works';
+@import './layout/advantages';
+@import './layout/contact-us';
+@import './layout/reviews';
+@import './layout/footer';
