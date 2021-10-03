@@ -6,6 +6,8 @@ const paths = require('./paths');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const { extendDefaultPlugins } = require('svgo');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
+const multi = require('multi-loader');
 
 module.exports = {
   entry: [paths.src + '/index.js'],
@@ -45,7 +47,7 @@ module.exports = {
             options: {
               limit: false,
               mimetype: 'image/png',
-              name: '/images/[name].[ext]',
+              name: 'images/[name].[ext]',
             },
           },
         ],
@@ -117,6 +119,7 @@ module.exports = {
         ],
       },
     }),
+    new ImageminWebpWebpackPlugin(),
   ],
   resolve: {
     modules: [paths.src, 'node_modules'],

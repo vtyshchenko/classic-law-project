@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const paths = require('./paths');
 const commonConfig = require('./webpack.common.js');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(commonConfig, {
   mode: 'development',
@@ -12,7 +12,7 @@ module.exports = merge(commonConfig, {
     open: true,
     compress: true,
     hot: true,
-    port: 8080,
+    port: 8081,
   },
   module: {
     rules: [
@@ -23,12 +23,12 @@ module.exports = merge(commonConfig, {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: { importLoaders: 1 }
+            options: { importLoaders: 1, url: false },
           },
-          'sass-loader'
+          'sass-loader',
         ],
       },
     ],
   },
-  plugins: [new webpack.HotModuleReplacementPlugin(),new MiniCssExtractPlugin()],
+  plugins: [new webpack.HotModuleReplacementPlugin(), new MiniCssExtractPlugin()],
 });
