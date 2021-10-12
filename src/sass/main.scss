@@ -10,6 +10,7 @@
 @import './common/container';
 @import './common/body';
 
+// COMPONENTS
 @import './components/logo';
 @import './components/form';
 @import './components/burger-menu';
@@ -19,11 +20,27 @@
 @import './components/form-contacts';
 @import './components/social';
 
-@import './layout/header';
-@import './layout/question';
-@import './layout/lawyers-in-business';
-@import './layout/works';
-@import './layout/advantages';
-@import './layout/contact-us';
-@import './layout/reviews';
-@import './layout/footer';
+@import './partials/footer';
+
+// ABOUT
+@import './partials/about';
+
+// CATALOG
+@import './partials/catalog';
+
+// CONTACTS
+@import './partials/contacts';
+
+// MAIN
+@import './layouts/main/question';
+@import './layouts/main/lawyers-in-business';
+@import './layouts/main/works';
+@import './layouts/main/advantages';
+@import './layouts/main/contact-us';
+@import './layouts/main/reviews';
+@import './partials/main';
+
+// REVIEW
+@import './partials/reviews';
+
+@import './partials/footer';
